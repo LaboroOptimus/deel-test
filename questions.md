@@ -5,8 +5,7 @@ When a component is updated it calls the shouldComponentUpdate method. This meth
 
 The main problem is that PureComponent can block all children from updating. So when we expect the data to be redrawn there may be old data on the screen
 
-## 2. Context + ShouldComponentUpdate might be dangerous. Can think of why is
-that?
+## 2. Context + ShouldComponentUpdate might be dangerous. Can think of why is that?
 
 The context is used to retrieve values in the child components, and shouldComponentUpdate can block this behavior, so the context will not work
 
@@ -24,8 +23,7 @@ The context is used to retrieve values in the child components, and shouldCompon
 
 - useRef instead of useState 
 
-## 5. What is a fragment and why do we need it? Give an example where it might
-break my app.
+## 5. What is a fragment and why do we need it? Give an example where it might break my app.
 
 Each react function must return one ReactNode. When we have multiple nodes on the same level:
 
@@ -45,8 +43,7 @@ it breaks the application. To do this, we can do the following
 
 Provider redux, HOC for logging or some third-party library, Keycloak Provider
 
-## 7. what's the difference in handling exceptions in promises, callbacks and
-async...await.
+## 7. what's the difference in handling exceptions in promises, callbacks and async...await.
 
 ## 8. How many arguments does setState take and why is it async.
 
